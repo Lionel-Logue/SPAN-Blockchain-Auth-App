@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
     public void signIn(View view){
         EditText profileId_tv = findViewById(R.id.profileID); //user's profile id from respective field
         EditText address_tv = findViewById(R.id.address); //user's address from respective field
-        String apiKey = "z3xTSDevCaLveVMLQkDuOWvPvLiOHGtva08EWEzhzBuaU2xHMeZetamqVZel1PKe"; //Moralis api key, required to use the Api
+        String apiKey = "<apikey>"; //Moralis api key, required to use the Api
 
         OkHttpClient client = new OkHttpClient(); //a tool that allows to perform http requests for verification of profile id,
         //it requires implementation 'com.squareup.okhttp3:okhttp:4.10.0' in app gradle file and need imports
@@ -68,7 +68,7 @@ public class MainActivity extends AppCompatActivity {
         });
     }
     public void signUp(View view){
-        String url = "https://10ca-213-111-70-241.ngrok-free.app";
+        String url = "<url>";
         Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
         startActivity(intent);
     }
